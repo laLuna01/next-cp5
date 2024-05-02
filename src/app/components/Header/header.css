@@ -1,0 +1,95 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    height: 90px;
+    width: 100%;
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    background-color: #f3d1e4;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px #9BA6BC;
+    z-index: 1;
+}
+.esquerda {
+    display: flex;
+    align-items: center;
+}
+.links-paginas {
+    display: flex;
+    margin-left: 30px;
+    gap: 35px;
+}
+.link-pagina {
+    font-size: 18px;
+    color: #3e066b;
+    font-weight: 600;
+}
+.link-pagina:hover {
+    color: rgb(255, 0, 200);
+}
+.direita {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    margin-left: 35px;
+}
+.menu-hamburger {
+    border: none;
+    background: none;
+    border-top: 4px solid #3e066b;
+    cursor: pointer;
+    display: none;
+}
+.menu-hamburger::before, .menu-hamburger::after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: #3e066b;
+    margin-top: 6px;
+}
+.menu-dropdown {
+    display: none;
+}
+@media screen and (max-width: 675px) {
+    .menu-hamburger {
+        display: block;
+    }
+    .links-paginas {
+        display: none;
+    }
+    .menu-dropdown {
+        width: 250px;
+        height: 173px;
+        flex-direction: column;
+        display: flex;
+        position: fixed;
+        right: 0;
+        top: 90px;
+        background-color: rgb(230, 234, 255);
+        justify-content: space-between;
+        border-bottom-left-radius: 20px;
+        border-left: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+    .links-paginas-dropdown {
+        display: flex;
+        flex-direction: column;
+    }
+    .links-paginas-dropdown > a {
+        font-size: 18px;
+        width: 100%;
+        padding: 15px;
+        padding-left: 30px;
+    }
+    #ultimo {
+        border-bottom-left-radius: 20px;
+    }
+    .links-paginas-dropdown > a:hover {
+        background-color: rgb(243, 249, 250);
+    }
+}

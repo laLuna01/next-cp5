@@ -3,8 +3,8 @@
     top: 0;
     height: 90px;
     width: 100%;
-    padding-left: 23px;
-    padding-right: 23px;
+    padding-left: 35px;
+    padding-right: 35px;
     padding-top: 10px;
     padding-bottom: 10px;
     display: flex;
@@ -17,19 +17,20 @@
 .esquerda {
     display: flex;
     align-items: center;
+    gap: 20px;
 }
 .links-paginas {
     display: flex;
     margin-left: 30px;
-    gap: 35px;
+    gap: 40px;
 }
 .link-pagina {
-    font-size: 18px;
+    font-size: 19px;
     color: #3e066b;
     font-weight: 600;
 }
 .link-pagina:hover {
-    color: rgb(255, 0, 200);
+    color: rgb(226, 212, 15);
 }
 .direita {
     display: flex;
@@ -70,7 +71,7 @@
         position: fixed;
         right: 0;
         top: 90px;
-        background-color: rgb(230, 234, 255);
+        background-color: rgb(255, 230, 251);
         justify-content: space-between;
         border-bottom-left-radius: 20px;
         border-left: 1px solid black;

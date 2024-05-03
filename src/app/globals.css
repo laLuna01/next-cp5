@@ -1,8 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Sedan+SC&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  background-image: url("../../public/background.jpg");
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+section{
+  width: 100%;
+  height: calc(100vh - 90px);
+  background-image: url("/background.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section > div {
+  height: 100%;
+}
+.texto {
+  padding: 10px 50px 40px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  max-width: 60%;
+  width: calc(100% - 430px);
+}
+.texto > p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+}
+.titulo {
+  color: rgb(226, 212, 15);
+  /* font-family: 'Josefin Sans', sans-serif; */
+  font-family: "Sedan SC", serif;
+  font-size: 60px;
+  text-shadow: 1px 1px 2px black;
+  margin-bottom: 30px;
+}
+.pessoa {
+  height: 100%;
+}
+@media screen and (max-width: 991px) {
+  section {
+    padding-top: 40px;
+    height: fit-content;
+    flex-direction: column;
+    gap: 60px;
+  }
+  .texto {
+    justify-content: stretch;
+    min-width: 100%;
+    margin: auto;
+  }
+  .texto > p {
+    font-size: 25px;
+  }
+  .titulo {
+    font-size: 70px;
+  }
+  .imagem > img {
+    display: none;
+  }
+  .imagem {
+    height: fit-content;
+  }
+  .imagem > span {
+    display: block;
+    height: 400px;
+    width: 96vw;
+    background-image: url("/2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }

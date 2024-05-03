@@ -5,7 +5,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+* {
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -71,6 +71,25 @@ section > div {
   }
   .imagem {
     height: fit-content;
+  }
+  .imagem > span {
+    display: block;
+    height: 400px;
+    width: 96vw;
+    background-image: url("/1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 691px) {
+  .texto {
+    padding: 20px;
+  }
+  .titulo {
+    font-size: 50px;
+  }
+  .texto > p {
+    font-size: 22px;
   }
   .imagem > span {
     display: block;

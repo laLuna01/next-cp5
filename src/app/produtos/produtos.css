@@ -1,0 +1,13 @@
+body {
+    background-image: url("/background2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.produtos {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 25px;
+}

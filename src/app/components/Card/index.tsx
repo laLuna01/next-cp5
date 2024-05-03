@@ -10,8 +10,8 @@ const Card = (props: Props) => {
                     <Image src={props.foto} alt={props.nome} width={100} height={100}/>
                 </div>
                 <div className="p-info">
-                    <p>{props.nome}</p>
-                    <p>{"R$" + props.preco}</p>
+                    <p className="nome">{props.nome}</p>
+                    <p className="preco">{"R$" + props.preco}</p>
                 </div>
                 <button className="p-comprar">Comprar</button>
             </div>

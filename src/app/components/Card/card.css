@@ -1,12 +1,17 @@
 .card {
-    border: 1px black solid;
+    border: 1px rgb(56, 21, 51) solid;
     border-radius: 20px;
     width: 220px;
     height: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     background-color: rgba(240, 248, 255, 0.349);
+    transition: transform .6s;
+}
+.card:hover {
+    transform: scale(1.1);
 }
 .p-img {
     width: 100%;
@@ -19,17 +24,30 @@
 }
 .p-img > img {
     width: 100%;
-    height: 200px;
+    height: 180px;
     object-fit: contain;
 }
 .p-info {
+    font-size: 19px;
     padding: 10px;
     text-align: center;
 }
+.nome {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.preco {
+    font-weight: bold;
+    color: #25063f;
+}
 .p-comprar {
-    width: 90%;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 15px;
+    width: 80%;
     padding: 5px;
+    font-size: 17px;
+    font-weight: 500;
     border-radius: 5px;
-    border: 1px solid black;
-    background-color: aliceblue;
+    border: 1px solid rgb(34, 34, 34);
+    background-color: rgba(240, 248, 255, 0.568);
 }

@@ -1,16 +1,12 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }  
+body {
+    background-image: url("/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 section{
     width: 100%;
     height: 100%;
-    background-image: url("/background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     display: flex;
     flex-direction: column;
   }
@@ -38,12 +34,4 @@ section{
   .texto > p {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
-  }
-
-  @media screen and (max-width: 740px) {
-    html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }  
   }

@@ -1,0 +1,67 @@
+body {
+  background-image: url("/background1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sobre {
+  background-color: rgba(240, 248, 255, 0.349);
+  border: 5px rgb(196, 230, 4) double;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  backdrop-filter: blur(4px);
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.sobre-texto {
+  padding: 30px;
+  align-items: center;
+  justify-content: center;
+  max-width: 60%;
+  width: calc(100% - 430px);
+}
+.sobre-texto > p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+}
+.sobre > img {
+  background-color: palevioletred;
+  border-left: 1px solid aliceblue;
+}
+@media screen and (max-width: 1240px) {
+  .sobre > img {
+    width: 500px;
+  }
+  .sobre-texto > p {
+    font-size: 17px;
+  }
+  .sobre-texto > h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .sobre > img {
+    width: 400px;
+  }
+  .sobre {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 795px) {
+  .sobre {
+    flex-direction: column;
+    text-align: center;
+  }
+  .sobre-texto {
+    max-width: 100%;
+    width: 100%;
+  }
+  .sobre > img {
+    width: 100%;
+    border: none;
+    margin-top: 15px;
+  }
+}

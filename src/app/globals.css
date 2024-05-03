@@ -10,7 +10,7 @@
   padding: 0;
   text-decoration: none;
 }
-section{
+.home{
   width: 100%;
   height: calc(100vh - 90px);
   background-image: url("/background.jpg");
@@ -20,7 +20,7 @@ section{
   align-items: center;
   justify-content: space-between;
 }
-section > div {
+.home > div {
   height: 100%;
 }
 .texto {
@@ -48,7 +48,7 @@ section > div {
   height: 100%;
 }
 @media screen and (max-width: 991px) {
-  section {
+  .home {
     padding-top: 40px;
     height: fit-content;
     flex-direction: column;

@@ -1,0 +1,40 @@
+body {
+    background-image: url("/background3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form-container {
+    background-color: rgba(255, 240, 249, 0.507);
+    backdrop-filter: blur(5px);
+    margin: auto;
+    width: 700px;
+    border-radius: 20px;
+    border: 5px double rgb(231, 235, 9);
+    padding: 20px 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-container > form > h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+.enviar {
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    width: 160px;
+    font-size: 18px;
+    color: #25063f;
+    font-weight: 600;
+    border-radius: 10px;
+    border: #25063f 4px double;
+    justify-content: center;
+    background-color: white;
+}
+.enviar:hover {
+    color: rgb(219, 6, 130);
+    border-color: rgb(80, 3, 90);
+}
